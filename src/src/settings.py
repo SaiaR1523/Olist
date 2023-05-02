@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'src.wsgi.application'
 
 DATABASES = {
     'default': {
-        "ENGINE": "django.db.backends.postgresql",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "Olist",
         "USER" : "postgres",
-        "PASSWORD" : "0000",
+        "PASSWORD" : "Admin0000",
         'HOST' : 'olist.postgres.database.azure.com',
     }
 }
