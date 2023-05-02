@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ivwejitpoip7h^)l)k3ghhogsigi&b-xa58yo2_6$h_qn7=25)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [”*”]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -83,7 +83,8 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "Olist",
         "USER" : "postgres",
-        "PASSWORD" : "admin",
+        "PASSWORD" : "0000",
+        'HOST' : 'olist.postgres.database.azure.com',
     }
 }
 
